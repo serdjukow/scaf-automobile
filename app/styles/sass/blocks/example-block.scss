@@ -1,0 +1,157 @@
+.block-full-screen {
+	display: block;
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+	// .block-full-screen__row
+
+	&__row {
+		position: relative;
+		padding-bottom: 45%;
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__title {
+		position: relative;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		@include adaptiv-value("padding-top", 98, 50, 1);
+		z-index: 2;
+		h1 {
+			font-family: inter-oh5;
+			font-size: 26px;
+			span {
+				color: #d21e1e;
+			}
+		}
+	}
+}
+
+.block-models {
+	position: relative;
+	width: 100%;
+	display: none;
+	@include media-breakpoint-down(lg) {
+		display: block;
+	}
+	// .block-models__row
+
+	&__row {
+	
+	}
+
+	// .block-models__item
+
+	&__item {
+		position: relative;
+		height: calc(100vh);
+		min-height: 400px;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	// .block-models__content-top
+
+	&__content-top {
+		position: absolute;
+		top: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	// .block-models__title
+
+	&__title {
+		display: inline-flex;
+		flex-wrap: nowrap;
+		font-weight: 500;
+		font-size: 41px;
+		line-height: 49px;
+		color: rgba(#fff, 0.75);
+		text-align: center;
+		margin-bottom: 10px;
+		user-select: none;
+	}
+
+	// .block-models__model
+
+	&__model {
+		display: block;
+		margin-right: 20px;
+	}
+
+	// .block-models__model-name
+
+	&__model-name {
+		display: block;
+		text-transform: uppercase;
+	}
+
+	// .block-models__content-bottom
+
+	&__content-bottom {
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease-in-out;
+	}
+
+	// .block-models__price
+
+	&__price {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 18px;
+		margin-right: 10px;
+		min-width: 125px;
+		transition: all 0.3s ease-in-out;
+	}
+
+	// .block-models__icon
+
+	&__icon {
+		flex: 0 0 44px;
+		width: 44px;
+		height: 44px;
+		padding: 14px;
+		background-color: #fff;
+		border-radius: 50%;
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	// .block-models_leasing
+
+	&__leasing {
+		position: absolute;
+		width: 100%;
+		top: 15%;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		@include adaptiv-value("padding-top", 98, 50, 1);
+		z-index: 2;
+		h3 {
+			font-family: inter-oh5;
+			font-size: 26px;
+			span {
+				color: #d21e1e;
+			}
+		}
+	}
+}

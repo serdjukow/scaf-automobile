@@ -1,0 +1,54 @@
+.footer {
+	position: relative;
+	width: 100%;
+	color: #222;
+	z-index: 10;
+	vertical-align: middle;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 15px 20px;
+		@media (max-width: 410.98px) {
+			flex-direction: column;
+			& > * {
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+	&__contacts {
+		display: flex;
+		& > * {
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+		}
+		@media (max-width: 1199.98px) {
+			flex-direction: column;
+			& > * {
+				&:not(:last-child) {
+					margin-bottom: 10px;
+					margin-right: 0;
+				}
+			}
+		}
+		@media (max-width: 410.98px) {
+			align-items: center;
+	
+		}
+
+		a {
+			display: block;
+			text-decoration: none;
+			color: inherit;
+			transition: color 0.25s ease-in;
+			@media (any-hover: hover) {
+				&:hover {
+					color: rgba(#222, 0.7);
+				}
+			}
+		}
+	}
+}
