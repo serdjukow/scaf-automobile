@@ -37,7 +37,7 @@
 		transform: translateX(-50%);
 		bottom: 25%;
 		width: 100%;
-		max-width: 1375px
+		max-width: 1375px;
 	}
 
 	// .block-full-screen__items
@@ -140,10 +140,12 @@
 		left: 50%;
 		transform: translateX(-50%);
 		display: flex;
+		justify-content: center;
 		align-items: center;
 		text-decoration: none;
 		color: #fff;
 		transition: all 0.3s ease-in-out;
+		width: 100%;
 	}
 
 	// .block-models__price
